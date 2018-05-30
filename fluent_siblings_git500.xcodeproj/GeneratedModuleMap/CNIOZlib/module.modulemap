@@ -1,0 +1,4 @@
+module CNIOZlib {
+    umbrella "/Users/wvgg/Desktop/fluent_siblings_git500/.build/checkouts/swift-nio.git-3108475404973543938/Sources/CNIOZlib/include"
+    export *
+}

@@ -1,16 +1,13 @@
-# Vapor Clean
+This is a demo of a bug in the Fluent Siblings system.
 
-This is a template for Vapor 3 users that does the absolute minimum to set up a working Vapor 3 environment.
+https://github.com/vapor/fluent/issues/500
 
-Unlike the official templates that are currently available, this template does not include vast swathes of extra example code that you will always need to delete. Instead, it adds just a single “hello” route so you can be sure everything is working correctly.
+1. vapor build
+2. vapor run
+3. load http://localhost:8080/v1/layout/1
 
-Although this repository contains a LICENSE file, this is meant for you to replace with whatever license you intend to use – please consider what little code is in this repository as public domain, and yours to do with as you please.
+You will see that the articles are listed with IDs 2 and 3.
 
-It’s my hope that the official Vapor project will add a template similar to this one at some point in the future, but until then please use this however you want.
+If you inspect the SQLite database, you will see that the article IDs are really 5 and 6.
 
-## Try it out
-
-If you have already installed the Vapor toolbox, you can create a new Vapor project from this repo using the following command:
-
-    vapor new MyProject --template=twostraws/vapor-clean
-# fluent_git500
+2 and 3 are the IDs of the references in the pivot table.
